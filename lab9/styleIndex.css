@@ -1,0 +1,26 @@
+body {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+#links {
+    text-align: center;
+  }
+  a:link {
+    color: green;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: red;
+    text-decoration: none;
+  }
+
+  a:active {
+    color: blue;
+    text-decoration: none;
+  }

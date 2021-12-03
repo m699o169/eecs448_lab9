@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Store</title>
+    <script type="text/javascript" src="formchecker.js"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+  <body>
+    <div id="header">THE STORE</div>
+    <form onsubmit="return validateForm()" action="customerBackend.php" method="post">
+      <div id=container>
+        <div class="cat1"><img src="images/cat1.jpg"></div>
+          <div class="button1"><input type="number" name="cat1" id="cat1" min="0" value="0">@ $10.00</div>
+          <div class="cat2"><img src="images/cat2.jpg"></div>
+          <div class="button2"><input class="button2" type="number" name="cat2" id="cat2" min="0" value="0">@ $20.00</div>
+          <div class="cat3"><img src="images/cat3.jpg"></div>
+          <div class="button3"><input class="button3" type="number" name="cat3" id="cat3" min="0" value="0">@ $30.00</div>
+        <!--</form>-->
+        <div class="checkout">
+          <label>Username: </label><input type="text" placeholder="email@email.com" name="email" id="email"><br>
+          <label>Password: </label><input type="password" placeholder="password" name="password" id="password"><br>
+          <!--<button type="submit" onclick="validateEmailPass()">Validate</button>--><br><br>
+
+          <label>Shipping:</label><br>
+          <input type="radio" name="shipping" value="1" id ="shipping1">Free 7 Day<br>
+          <input type="radio" name="shipping" value="2" id ="shipping2">$50.00 over night<br>
+          <input type="radio" name="shipping" value="3" id ="shipping3">$5.00 three day<br><br>
+          <button type="submit" name="submit">Submit</button><br>
+          <button type="reset" name="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
